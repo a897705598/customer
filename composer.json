@@ -1,6 +1,6 @@
 {
-    "name": "jxc/customer",
-    "description": "jxc customer module",
+    "name": "ares/customer",
+    "description": "ares customer module",
     "type": "library",
     "authors": [
         {
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Jxc\\": "src/"
+            "Ares\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jxc\\Provider\\JxcCustomerProvider"]
+                "Ares\\Provider\\AresCustomerProvider"]
         }
     },
     "repositories": [

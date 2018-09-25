@@ -132,8 +132,8 @@
         </table>
     </div>
 </div>
-@include('customer.addCustomer')
-@include('customer.confirm')
+@include('ares.basic.customer.addCustomer')
+@include('ares.basic.customer.confirm')
 <script>
     $(function () {
         $('.btn-add').unbind('click').click(function () {

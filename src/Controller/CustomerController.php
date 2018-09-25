@@ -1,9 +1,9 @@
 <?php
 
-namespace Jxc\Controller;
+namespace App\Http\Controllers\Ares;
 
 use App\Traits\ApiValidator;
-use Jxc\Model\Basic\Customer;
+use App\Model\Ares\Customer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Log;
@@ -16,7 +16,7 @@ class CustomerController extends Controller
     public function customerList()
     {
         $customers = Customer::all();
-        return view('customer.customerList')->with('customers', $customers);
+        return view('ares.basic.customer.customerList')->with('customers', $customers);
     }
 
     public function addCustomer(Request $request)
