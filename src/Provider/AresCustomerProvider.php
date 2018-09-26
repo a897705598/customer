@@ -33,6 +33,9 @@ class AresCustomerProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../Exception' => app_path('Exceptions')
         ]);
+        $this->publishes([
+            __DIR__.'/../Config/ares.php' => config_path('ares.php')
+        ]);
     }
 
     /**
